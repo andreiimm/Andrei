@@ -1,8 +1,8 @@
  
 .nav-link{
     font-family: 'Times New Roman', Times, serif;
-    
-}
+    }
+
   header .nav-link {
     color: rgb(0, 0, 0);
   }
@@ -12,7 +12,9 @@
   .nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px; 
+    flex-wrap: wrap;
   }
   header {
     background-color: #f57689; 
@@ -25,8 +27,8 @@
   }
 
   .nav-pills .nav-link {
-    padding: 6px 12px;
-    font-size: 14px;
+    padding: 2px 9px;
+    font-size: 18px;
   }
   header {
    
