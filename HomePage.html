@@ -13,18 +13,22 @@
             <img class="img1" src="/images/Ben totrt.jpg" alt="Ben's Cakes">
         </a>
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="/HomePage.html" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="/Cakes.html" class="nav-link">Cakes</a></li>
-            <li class="nav-item"><a href="/tutorial.html" class="nav-link">Tutorials</a></li>
-            <li class="nav-item"><a href="/contactus.html" class="nav-link">Contact Us</a></li>
-        </ul>
+          <li class="nav-item"><a href="/HomePage.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/Cakes.html" class="nav-link">Cakes</a></li>
+          <li class="nav-item"><a href="/tutorial.html" class="nav-link">Tutorials</a></li>
+          <li class="nav-item"><a href="/contactus.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      
     </header>
 
     <div class="hero-section">
       <div class="text-content">
           <h1>Welcome to Ben's Cakes!</h1>
-          <p> Delicious cakes made with love and artistry. Discover delicious cakes, helpful tutorials, and everything you need for your sweet celebrations!</p>
-          <button class="explore-button">Get in Touch!</button>
+          <p> Delicious cakes made with love and artistry. Discover delicious cakes, helpful tutorials, and everything you need for your sweet celebrations! Meet Ben Adams.
+            Ben Adams is a talented baker known for creating beautiful, custom-made cakes for weddings, birthdays, and special occasions. His passion for baking and eye for detail have made him an expert in icing and intricate cake decorations. With a growing local customer base, Ben is now expanding his business online to showcase his work, share tips, and connect with more people who love his creative and delicious cakes.</p>
+          <a href="contactus.html" class="get in contact">
+            Get in touch!
+          </a>
       </div>
       <div class="image-content">
         <img src="/images/Ben.jpg" class="d-block mx-lg-auto" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -107,9 +111,22 @@
     </div>
   </footer>
   
-
-
-
+  <script>
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    // Get the current page URL path
+    const currentPage = window.location.pathname;
+  
+    // Loop through each link
+    navLinks.forEach(link => {
+      // Check if the href matches the current path
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active'); // Add active class
+      }
+    });
+  </script>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

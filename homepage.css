@@ -43,6 +43,15 @@ header .nav-link:hover {
   color: black; /* Hover state color */
 }
 
+header .nav-link.active {
+  color: white; /* Text color for active state */
+  background-color: #ff91a4; /* Soft pastel pink highlight */
+  padding: 10px 15px; /* Add padding for better appearance */
+  border-radius: 20px; /* Rounded corners */
+  font-weight: bold; /* Highlight the text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth effect */
+}
+
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link.active {
   color: #000000 !important;
@@ -80,11 +89,12 @@ header .nav-link:hover {
 
 .text-content p {
   font-size: 1.2rem;
-  color: #444; /* Dark gray for text */
+  color: #000000; /* Dark gray for text */
   margin-bottom: 30px;
 }
 
-.text-content .explore-button {
+.get {
+  text-decoration: none;
   background-color: #b51d69; /* Button color */
   color: white;
   border: none;
@@ -95,7 +105,7 @@ header .nav-link:hover {
   transition: background-color 0.3s ease;
 }
 
-.text-content .explore-button:hover {
+.get {
   background-color: #e60072; /* Darker pink for hover */
 }
 /*PROMOTION STYLING*/
