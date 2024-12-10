@@ -247,8 +247,6 @@ button:hover {
 }
 
 
-
-
 /* Footer Styling */
 .footer {
   background-color: #f8d9e8; /* Soft pastel pink */
@@ -285,29 +283,33 @@ button:hover {
   text-decoration: underline;
 }
 
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.social-icon {
-  text-decoration: none;
-  color: #771603; /* Deep brown-red color */
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icon:hover {
-  color: #ff007f; /* Highlight color */
-  transform: scale(1.1); /* Slight zoom effect */
-}
-
 .social-media h3 {
   font-size: 1.5rem;
   color: #771603;
   margin-bottom: 10px;
+}
+.social-icon img {
+  width: 40px; /* Increased size */
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%; /* Rounded icons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+/* Hover Animation */
+.social-icon img:hover {
+  transform: scale(1.2); /* Slightly larger on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Optional: Change Icon Colors on Hover */
+.social-icon:hover img {
+  filter: brightness(1.1); /* Slight brightness boost */
+}
+
+/* Optional: Add Padding Around Icons */
+.social-icon {
+  padding: 5px;
 }
 
 /* Responsive adjustments */
@@ -322,4 +324,3 @@ button:hover {
     align-items: center;
   }
 }
-
